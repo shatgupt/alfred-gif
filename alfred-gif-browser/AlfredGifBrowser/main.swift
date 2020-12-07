@@ -166,7 +166,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           log(self.selectedGifWebUrl)
           let pb = NSPasteboard.general
           pb.clearContents()
-          pb.setString(self.selectedGifWebUrl, forType: .string)
+          pb.setString("/md ![](\(self.selectedGifWebUrl))", forType: .string)
         }
         self.window.orderOut(self)
       },
